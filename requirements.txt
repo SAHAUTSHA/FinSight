@@ -1,7 +1,10 @@
-streamlit
-yfinance
-python-dotenv
-requests
-nltk
-transformers
-torch
+streamlit==1.39.0
+yfinance==0.2.50
+python-dotenv==1.0.1
+requests==2.32.3
+nltk==3.9.1
+transformers==4.45.1
+torch==2.4.1
+pandas==2.2.3
+numpy==2.1.2
+plotly==5.24.1
