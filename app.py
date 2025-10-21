@@ -9,6 +9,10 @@ import pandas as pd
 import streamlit as st
 import yfinance as yf 
 
+import nltk
+nltk.download("vader_lexicon", quiet=True)
+
+
 # Function Imports
 from data.fetch_prices import get_prices_yf as get_prices
 from data.fetch_news import get_news_newsapi
@@ -365,7 +369,7 @@ sent_bar_val = (net_sent + 1.0) / 2.0
 sent_color = sentiment_color_from_net(net_sent)
 engine_note = "FinBERT (finance-domain transformer)" if use_finbert else "VADER (rule-based, fast)"
 
-# Left Signal Panel
+# Left Signal
 with left:
     st.markdown("### Signal")
     sig, confidence, details = "HOLD", 0.0, {"blend_score": 0.0, "tech": {}, "news": {}}
