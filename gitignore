@@ -1,0 +1,13 @@
+# Environment & credentials
+.env
+
+# Bytecode / cache
+__pycache__/
+*.pyc
+
+# OS junk
+.DS_Store
+
+# IDE / Streamlit
+.vscode/
+.streamlit/
